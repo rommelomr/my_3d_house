@@ -1,0 +1,38 @@
+<html>
+
+  <head>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<meta name="viewport" content="width=device-width,user-scalable=no">  
+    <title>Raycasting</title>
+  </head>
+
+  <body onload='inicializa();'>
+  	<center>
+  		
+	    <canvas id='canvas' style='border:2px solid #000000;'></canvas><br><br>
+
+	    <button id="arriba"
+	    	style="width:60px;height: 60px;"
+	    	
+	    	onmousedown="jugador.arriba()"
+	    	onmouseup="jugador.avanzaSuelta()"
+	    	>^</button><br>
+	    <button id="izquierda"
+	    	style="width:60px;height: 60px;"
+	    	onmousedown="jugador.izquierda()"
+	    	onmouseup="jugador.giraSuelta()"
+	    	><</button>
+	    <button id="abajo"
+	    	style="width:60px;height: 60px;"
+	    	onmousedown="jugador.abajo()"
+	    	onmouseup="jugador.avanzaSuelta()"
+	    	>V</button>
+	    <button id="derecha"
+	    	style="width:60px;height: 60px;"
+	    	onmousedown="jugador.derecha()"
+	    	onmouseup="jugador.giraSuelta()"
+	    	>></button>
+  	</center>
+<script src='js/raycasting.js'></script>
+  </body>
+</html>
