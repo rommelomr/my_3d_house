@@ -980,15 +980,20 @@ class Sprite{
  function inicializaSprites(){
  
   //CARGAMOS SPRITES
+  piano = new Image();
+  piano.src = "img/piano.png";
+  sprites[0] = new Sprite(280,220,piano);
+
+  cama = new Image();
+  cama.src = "img/cama.png";
+  sprites[1] = new Sprite(250,165,cama);
+  
   /*
-  imgArmor = new Image();
-  imgArmor.src = "img/armor.png";
   
   imgPlanta = new Image();
   imgPlanta.src = "img/planta.png";
   
   //CREAMOS LOS OBJETOS PARA LAS IMÁGENES
-  sprites[0] = new Sprite(300,120,imgArmor);
   sprites[1] = new Sprite(150,150,imgArmor);
   sprites[2] = new Sprite(320,300,imgPlanta);
   sprites[3] = new Sprite(300,380,imgPlanta);
